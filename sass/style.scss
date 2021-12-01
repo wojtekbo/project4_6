@@ -211,3 +211,41 @@ header > * {
       margin-top: 0px;
    }
 }
+
+footer {
+   .copyright {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+   }
+   .social-media {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+   }
+   .row {
+      padding: 40px 0;
+   }
+   p {
+      font-family: $font-title;
+      font-size: 13px;
+   }
+   li {
+      display: inline-block;
+   }
+   .icon {
+      height: 40px;
+      width: 40px;
+      background-color: $color-main;
+      border-radius: 50%;
+      margin: 0 20px;
+      text-align: center;
+      font-size: 0;
+      i {
+         line-height: 40px;
+         font-size: 20px;
+         color: $color-white;
+      }
+   }
+}
