@@ -192,11 +192,11 @@ header > * {
 
 .services .row,
 .portfolio .row {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .portfolio {
-  background-color: #28b6f7;
+  background-color: #f3f3f2;
 }
 
 .portfolio-item {
