@@ -1,0 +1,107 @@
+$color-main: #f0cc00;
+$color-details1: #28b6f7;
+$color-details2: #564ecd;
+$color-white: #fff;
+
+$font-main: "Nunito Sans", sans-serif;
+$font-title: "Bitter", serif;
+$font-logo: "Nosifer", cursive;
+
+* {
+   border: 0;
+   padding: 0;
+   margin: 0;
+   font-family: $font-main;
+}
+
+header {
+   width: 100%;
+   height: 60vh;
+   background-image: url("https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   nav {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px 0;
+      .nav-logo {
+         font-family: $font-logo;
+         font-size: 30px;
+      }
+      .wrapper {
+         display: flex;
+         align-items: center;
+      }
+      ul {
+         display: block;
+         list-style-type: none;
+      }
+      li {
+         display: inline-block;
+      }
+      a {
+         text-decoration: none;
+         color: $color-white;
+         margin: 0 10px;
+      }
+   }
+   .splash {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+   }
+   .splash-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   button {
+      padding: 20px 25px;
+      background-color: $color-main;
+      color: $color-white;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 600;
+      margin: 15px;
+   }
+   h1 {
+      font-size: 35px;
+      margin: 15px 20px;
+      font-family: $font-title;
+      font-style: italic;
+      font-weight: 200;
+      color: $color-white;
+      text-align: center;
+   }
+   h2 {
+      font-size: 55px;
+      margin: 15px 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-white;
+      text-align: center;
+   }
+}
+header:after {
+   content: ""; // ::before and ::after both require content
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.3;
+   z-index: 1;
+}
+header > * {
+   z-index: 10;
+   position: relative;
+}
