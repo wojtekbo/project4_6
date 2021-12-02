@@ -60,6 +60,7 @@ header {
    }
 
    nav {
+       
       width: 70%;
       display: flex;
       flex-direction: row;
@@ -72,6 +73,7 @@ header {
       .wrapper {
          display: flex;
          align-items: center;
+         
       }
       ul {
          display: block;
@@ -84,6 +86,7 @@ header {
          text-decoration: none;
          color: $color-white;
          margin: 0 10px;
+         font-family: $font-title;
       }
    }
    .splash {
@@ -95,17 +98,6 @@ header {
          display: flex;
          flex-direction: column;
          align-items: center;
-      }
-      button {
-         padding: 20px 25px;
-         background-color: $color-main;
-         color: $color-white;
-         border-radius: 3px;
-         text-transform: uppercase;
-         font-size: 13px;
-         font-weight: 600;
-         margin: 15px;
-         font-family: $font-title;
       }
       h1 {
          font-size: 35px;
@@ -126,6 +118,17 @@ header {
          text-align: center;
       }
    }
+   button {
+    padding: 20px 25px;
+    background-color: $color-main;
+    color: $color-white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 15px;
+    font-family: $font-title;
+ }
 }
 header:after {
    content: ""; // ::before and ::after both require content
@@ -149,6 +152,7 @@ header > * {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 20px 0;
    }
 
    i {
@@ -195,6 +199,7 @@ header > * {
    background-color: $color-white;
    display: flex;
    flex-direction: column;
+   height: 100%;
    .portfoli-photo {
       height: 300px;
       width: 100%;
@@ -246,6 +251,100 @@ footer {
          line-height: 40px;
          font-size: 20px;
          color: $color-white;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+    p{
+        font-size: 18px!important;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+    header {
+        nav {
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 20px 0;
+            align-items: center;
+            .nav-logo{
+                margin-top: 25px;
+                font-size: 50px;
+            }
+            a{
+                font-size: 20px;
+            }
+        }
+        button{
+            font-size: 20px;
+        }
+        .splash {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: flex-start;
+        }
+    }
+    .services{
+
+    i{
+        font-size: 80px;
+    }
+     i:after {
+        width: 130px;
+        height: 130px;
+        border: $color-main 5px solid;
+
+     }
+
+   }
+   .portfolio-item {
+      .portfoli-photo {
+         height: 300px;
+         width: 100%;
+      }
+      .portfolio-desc {
+         padding: 35px 10px;
+      }
+   }
+   .mb{
+    margin-bottom: 40px;
+    }
+    footer{
+        .row{
+            flex-direction: column-reverse;
+        }
+        .copyright{
+            justify-content: center;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   header {
+      nav {
+         width: 100%;
+         a{
+            font-size: 20px;
+        }
+      }
+   }
+   .services{
+       .service{
+           padding: 5px;
+       }
+   }
+   .portfolio-item {
+      .portfoli-photo {
+         height: 200px;
+         width: 100%;
+      }
+      .portfolio-desc {
+         padding: 15px;
       }
    }
 }
