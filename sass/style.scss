@@ -275,9 +275,11 @@ footer {
                 font-size: 50px;
             }
             a{
-                font-size: 20px;
+                font-size: 16px;
             }
+
         }
+
         button{
             font-size: 20px;
         }
@@ -286,6 +288,12 @@ footer {
             flex-direction: column;
             flex: 1;
             justify-content: flex-start;
+            h2{
+                font-size: 30px;
+            }
+            h1{
+                font-size: 34px;
+            }
         }
     }
     .services{
@@ -329,7 +337,7 @@ footer {
       nav {
          width: 100%;
          a{
-            font-size: 20px;
+            font-size: 16px;
         }
       }
    }
